@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.filters {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-cell {
+    margin-bottom: 15px;
+}
+
+.pokemon-img {
+    width: 100%;
+    height: auto;
+}
+
+.pokemon-info{
+    cursor:pointer
+}
+
+.container {
+    flex: 1;
+
+}
+
+/* Pokemon.html */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    height: 50px;
+    width: 90px;
+}
+
+.pokemon-footer {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
