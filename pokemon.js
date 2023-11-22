@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search)
     pokemonId = urlParams.get('id')
 
-    fetch('../assets/pokedex.json')
+    fetch('assets/pokedex.json')
     .then(response => response.json())
     .then(data => {
         const pokemonDetails = data.find(pokemon => pokemon.id === parseInt(pokemonId))
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setPokemonDetails(pokemon) {
     document.getElementById('pokemon-name').textContent = pokemon.name.english
-    document.getElementById('pokemon-img').src = `/assets/images/${pokemonId}.png`
+    document.getElementById('pokemon-img').src = `assets/images/${pokemonId}.png`
     document.getElementById('pokemon-id').textContent = pokemon.id
     document.getElementById('pokemon-type').textContent = pokemon.type
 
