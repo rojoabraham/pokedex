@@ -41,7 +41,7 @@ function popularListaPokemon(pokemonObj) {
         listContainer.appendChild(col)
 
         col.addEventListener('click', function() {
-            window.location.href= `/pokemon.html?id=${pokemonNumber}`
+            window.location.href= `./pokemon.html?id=${pokemonNumber}`
         })
     });
 }
