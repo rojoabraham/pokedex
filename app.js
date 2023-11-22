@@ -5,14 +5,14 @@ let activeData = ''
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('assets/pokedex.json')
+    fetch('/assets/pokedex.json')
         .then(response => response.json())
         .then(data => {
             activeData = data
             popularListaPokemon(data)
         })
 
-    fetch('assets/types.json')
+    fetch('/assets/types.json')
         .then(response => response.json())
         .then(data => {
             popularTypes(data)
@@ -55,7 +55,7 @@ function popularTypes(pokemonType) {
 
 selectTypes.addEventListener('change', function(e) {
     let type = e.target.value
-    fetch('assets/pokedex.json')
+    fetch('/assets/pokedex.json')
     .then(response => response.json())
     .then(data => {
         if(type === 'Any'){
