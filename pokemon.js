@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search)
     pokemonId = urlParams.get('id')
 
-    fetch('../assets/pokedex.json')
+    fetch('./assets/pokedex.json')
     .then(response => response.json())
     .then(data => {
         const pokemonDetails = data.find(pokemon => pokemon.id === parseInt(pokemonId))
