@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setPokemonDetails(pokemon) {
     document.getElementById('pokemon-name').textContent = pokemon.name.english
-    document.getElementById('pokemon-img').src = `assets/images/${pokemonId}.png`
+    document.getElementById('pokemon-img').src = `./assets/images/${pokemonId}.png`
     document.getElementById('pokemon-id').textContent = pokemon.id
     document.getElementById('pokemon-type').textContent = pokemon.type
 

@@ -32,7 +32,7 @@ function popularListaPokemon(pokemonObj) {
         col.className = 'col-lg-2 col-md-3 col-sm-6 col-8 pokemon-cell'
         col.innerHTML = `
             <div class="pokemon-info">
-                <img src="/assets/images/${pokemonNumber}.png" alt="${pokemon.name.english}" class="pokemon-img">
+                <img src="./assets/images/${pokemonNumber}.png" alt="${pokemon.name.english}" class="pokemon-img">
                 <h5>${pokemon.name.english}</h5>
                 <p><strong>Type:</strong> ${pokemonType}</p>
                 <p><strong>Total Stats</strong>: ${pokemon.base.HP + pokemon.base.Attack + pokemon.base.Defense + pokemon.base['Sp. Attack'] + pokemon.base['Sp. Defense'] + pokemon.base.Speed}</p>
